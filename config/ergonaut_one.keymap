@@ -38,7 +38,7 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5            &kp NUMBER_6       &kp N7           &kp N8     &kp N9          &kp N0        &trans
 &trans  &kp EXCL      &kp AT        &kp HASH      &kp DLLR        &kp PRCNT         &kp CARET          &kp AMPS         &kp STAR   &kp LPAR        &kp RPAR      &trans
 &trans  &trans        &kp MINUS     &kp PLUS      &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp EQUAL  &kp UNDERSCORE  &kp QUESTION  &trans
-                                    &trans        &trans          &mo 3             &mo 3              &trans           &trans
+                                    &trans        &trans          &trans            &trans             &trans           &trans
             >;
         };
 
@@ -47,7 +47,7 @@
 &trans  &kp LS(LA(Q))    &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &kp PAGE_UP    &trans        &trans  &trans    &trans     &trans  &trans
 &trans  &trans           &kp LEFT      &kp DOWN  &kp RIGHT      &kp PAGE_DOWN  &kp LEFT      &kp UP  &kp DOWN  &kp RIGHT  &trans  &trans
 &trans  &kp PRINTSCREEN  &kp HOME      &none     &kp END        &trans         &kp CAPSLOCK  &trans  &trans    &trans     &trans  &trans
-                                       &trans    &mo 3          &trans         &trans        &mo 3   &trans
+                                       &trans    &trans         &trans         &trans        &trans  &trans
             >;
         };
 
