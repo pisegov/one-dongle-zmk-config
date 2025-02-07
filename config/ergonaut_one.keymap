@@ -27,16 +27,16 @@
 
         linux_layer {
             bindings = <
-&kp GRAVE  &mt LEFT_ALT Q  &mt LEFT_CONTROL W  &mt LEFT_GUI E  &mt LEFT_SHIFT R  &kp T      &kp Y            &mt RIGHT_SHIFT U  &mt RIGHT_GUI I  &mt RIGHT_CONTROL O  &mt RIGHT_ALT P  &kp BACKSLASH
-&none      &kp A           &kp S               &kp D           &kp F             &kp G      &kp H            &kp J              &kp K            &kp L                &kp SEMI         &kp SQT
-&none      &kp Z           &kp X               &kp C           &kp V             &kp B      &kp N            &kp M              &kp COMMA        &kp DOT              &kp FSLH         &none
-                                               &kp TAB         &lt 2 SPACE       &lt 3 ESC  &lt 3 BACKSPACE  &lt 2 RET          &kp DEL
+&kp GRAVE   &mt LEFT_ALT Q  &mt LEFT_CONTROL W  &mt LEFT_GUI E  &mt LEFT_SHIFT R  &kp T      &kp Y            &mt RIGHT_SHIFT U  &mt RIGHT_GUI I  &mt RIGHT_CONTROL O  &mt RIGHT_ALT P  &kp BACKSLASH
+&kp ESC     &kp A           &kp S               &kp D           &kp F             &kp G      &kp H            &kp J              &kp K            &kp L                &kp SEMI         &kp SQT
+&kp ESCAPE  &kp Z           &kp X               &kp C           &kp V             &kp B      &kp N            &kp M              &kp COMMA        &kp DOT              &kp FSLH         &kp ESC
+                                                &kp TAB         &lt 2 SPACE       &lt 3 ESC  &lt 3 BACKSPACE  &lt 2 RET          &kp DEL
             >;
         };
 
-        mac_layer{
+        mac_layer {
             bindings = <
-&kp GRAVE  &mt LEFT_ALT Q  &mt LEFT_CONTROL W  &mt LEFT_GUI E  &mt LEFT_SHIFT R  &kp T      &kp Y            &mt RIGHT_SHIFT U  &mt RIGHT_GUI I  &mt RIGHT_CONTROL O  &mt RIGHT_ALT P  &kp BACKSLASH
+&kp GRAVE  &mt LEFT_GUI Q  &mt LEFT_CONTROL W  &mt LEFT_ALT E  &mt LEFT_SHIFT R  &kp T      &kp Y            &mt RIGHT_SHIFT U  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O  &mt RIGHT_GUI P  &kp BACKSLASH
 &none      &kp A           &kp S               &kp D           &kp F             &kp G      &kp H            &kp J              &kp K            &kp L                &kp SEMI         &kp SQT
 &none      &kp Z           &kp X               &kp C           &kp V             &kp B      &kp N            &kp M              &kp COMMA        &kp DOT              &kp FSLH         &none
                                                &kp TAB         &lt 2 SPACE       &lt 3 ESC  &lt 3 BACKSPACE  &lt 2 RET          &kp DEL
@@ -54,10 +54,10 @@
 
         raise_layer {
             bindings = <
-&trans  &kp LS(LA(Q))    &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &kp PAGE_UP    &trans        &trans  &trans    &trans     &trans  &trans
-&trans  &trans           &kp LEFT      &kp DOWN  &kp RIGHT      &kp PAGE_DOWN  &kp LEFT      &kp UP  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &kp PRINTSCREEN  &kp HOME      &none     &kp END        &trans         &kp CAPSLOCK  &trans  &trans    &trans     &trans  &trans
-                                       &trans    &trans         &trans         &trans        &trans  &trans
+&trans  &kp LA(LC(LG(Q)))  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &kp PAGE_UP    &trans        &trans  &trans    &trans     &trans  &trans
+&trans  &trans             &kp LEFT      &kp DOWN  &kp RIGHT      &kp PAGE_DOWN  &kp LEFT      &kp UP  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &kp PRINTSCREEN    &kp HOME      &none     &kp END        &trans         &kp CAPSLOCK  &trans  &trans    &trans     &trans  &trans
+                                         &trans    &trans         &trans         &trans        &trans  &trans
             >;
         };
 
@@ -65,7 +65,7 @@
             bindings = <
 &bootloader  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6      &kp F7                &kp F8                &kp F9   &kp F10  &bootloader
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp K_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp F11  &kp F12  &bt BT_CLR
-&sys_reset   &none         &none         &none         &none         &none         &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none    &none    &sys_reset
+&sys_reset   &none         &none         &none         &none         &tog 1        &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none    &none    &sys_reset
                                          &trans        &none         &trans        &none       &trans                &trans
             >;
         };
