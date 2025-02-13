@@ -9,9 +9,9 @@
 #define RSE 3
 #define ADJ 4
 
-&lt { quick-tap-ms = <150>; };
+&lt { quick-tap-ms = <200>; };
 
-&mt { quick-tap-ms = <150>; };
+&mt { quick-tap-ms = <200>; };
 
 / {
     conditional_layers {
@@ -68,19 +68,19 @@
 
         linux_layer {
             bindings = <
-&kp GRAVE  &mt LEFT_ALT Q  &mt LEFT_CONTROL W  &mt LEFT_GUI E  &mt LEFT_SHIFT R  &kp T      &kp Y            &mt RIGHT_SHIFT U  &mt RIGHT_GUI I  &mt RIGHT_CONTROL O  &mt RIGHT_ALT P  &kp BACKSLASH
-&none      &kp A           &kp S               &kp D           &kp F             &kp G      &kp H            &kp J              &kp K            &kp L                &kp SEMI         &kp SQT
-&kp F14    &kp Z           &kp X               &kp C           &kp V             &kp B      &kp N            &kp M              &kp COMMA        &kp DOT              &kp FSLH         &none
-                                               &kp TAB         &lt 2 SPACE       &lt 3 ESC  &lt 3 BACKSPACE  &lt 2 RET          &kp DEL
+&kp GRAVE  &kp Q           &kp W        &kp E           &kp R             &kp T      &kp Y            &kp U              &kp I            &kp O        &kp P               &kp BACKSLASH
+&none      &mt LEFT_ALT A  &mt LCTRL S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G      &kp H            &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RCTRL L  &mt RIGHT_ALT SEMI  &kp SQT
+&kp F14    &kp Z           &kp X        &kp C           &kp V             &kp B      &kp N            &kp M              &kp COMMA        &kp DOT      &kp FSLH            &none
+                                        &kp TAB         &lt 2 SPACE       &lt 3 ESC  &lt 3 BACKSPACE  &lt 2 RET          &kp DEL
             >;
         };
 
         mac_layer {
             bindings = <
-&kp GRAVE  &mt LEFT_GUI Q  &mt LEFT_CONTROL W  &mt LEFT_ALT E  &mt LEFT_SHIFT R  &kp T      &kp Y            &mt RIGHT_SHIFT U  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O  &mt RIGHT_GUI P  &kp BACKSLASH
-&none      &kp A           &kp S               &kp D           &kp F             &kp G      &kp H            &kp J              &kp K            &kp L                &kp SEMI         &kp SQT
-&kp F14    &kp Z           &kp X               &kp C           &kp V             &kp B      &kp N            &kp M              &kp COMMA        &kp DOT              &kp FSLH         &none
-                                               &kp TAB         &lt 2 SPACE       &lt 3 ESC  &lt 3 BACKSPACE  &lt 2 RET          &kp DEL
+&kp GRAVE  &kp Q           &kp W        &kp E           &kp R             &kp T      &kp Y            &kp U              &kp I            &kp O        &kp P               &kp BACKSLASH
+&none      &mt LEFT_GUI A  &mt LCTRL S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &kp G      &kp H            &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &mt RCTRL L  &mt RIGHT_GUI SEMI  &kp SQT
+&kp F14    &kp Z           &kp X        &kp C           &kp V             &kp B      &kp N            &kp M              &kp COMMA        &kp DOT      &kp FSLH            &none
+                                        &kp TAB         &lt 2 SPACE       &lt 3 ESC  &lt 3 BACKSPACE  &lt 2 RET          &kp DEL
             >;
         };
 
